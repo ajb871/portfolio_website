@@ -1,1 +1,1 @@
-This is a Read me file 
+This is a work-in-progress portfolio website, created using the Skeleton boilerplate.
