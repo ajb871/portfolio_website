@@ -1,7 +1,7 @@
 /*-----------------------home-----------------------------------------*/
 
 body{
-	font-family: 'Poppins', sans-serif; 
+	font-family: 'IBM Plex Mono', monospace;
 	color: #3f3f3f;
 }
 
@@ -22,10 +22,6 @@ header a{
 	color: black;
 }
 
-header a:hover{
-	color: black;
-}
-
 #title {
 	line-height: 60pt;
 	margin: 0px 0px 40px 0px;
@@ -35,6 +31,15 @@ header a:hover{
 	font-size: 50pt;
 	text-align: center;
 	font-weight: bold;
+	transition: all 0.2s ease;
+}
+
+#title a:hover {
+	transition: all 0.2s ease;
+}
+
+#title-id {
+	color:black;
 }
 
 
@@ -64,10 +69,14 @@ header a:hover{
 	padding: 15px;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
+	transition: all 0.2s ease;
+
 }
 
 #navbar a:hover{
 	color: #603fe2;
+	font-size: 22px;
+    transition: all 0.2s ease;
 }
 
 #line{
@@ -94,6 +103,8 @@ header a:hover{
 
 	border-radius: 15px;
 	padding: 1px 8px 1px 8px;
+	transition: 0.2s ease;
+
 }
 
 #tag-selection p:hover{
@@ -130,7 +141,6 @@ header a:hover{
 #icon-tags {
 	margin-top: 0px;
 	padding-top: 0px;
-	font-family: 'Poppins 300i', sans-serif;
 	font-style: italic; 
 }
 
@@ -249,8 +259,10 @@ a.darken p:hover {
 
 
 #about-me {
+	/*font-family: 'Poppins', sans-serif; */
+	color: black;
 	padding-top: 20px;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 #profile-pic {

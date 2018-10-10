@@ -1,26 +1,6 @@
-
 var slideIndex = 1;
-//var n;
 
-/*plusSlides = (n) => {
-	clearInterval(myTimer);
-	this.showSlides(slideIndex += n);
-	if (n = -1){
-		myTimer 
-	}
-}*/
-
-/*plusSlides = () =>{
-	slideIndex ++;
-	this.showSlides(slideIndex);
-}*/
-
-/*
-currentSlide = (n) =>{
-	this.showSlides(slideIndex = n);
-} */
-
-showSlides = () => {
+var showSlides = () => {
 
 	console.log(slideIndex);
 	var i;
@@ -45,13 +25,3 @@ showSlides = () => {
 
 
 	setInterval(showSlides, 9000);
-
-
-//var slideInterval = setInterval(plusSlides(1),2000); 
-
-/*
-componentDidMount = () => {
-	this.showSlides(slideIndex);
-	myTimer = setInterval(() => {this.plusSlides(1); }, 1000);
-}
-*/
