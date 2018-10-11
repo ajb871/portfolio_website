@@ -1,6 +1,26 @@
 var slideIndex = 1;
+//var n;
 
-var showSlides = () => {
+/*plusSlides = (n) => {
+	clearInterval(myTimer);
+	this.showSlides(slideIndex += n);
+	if (n = -1){
+		myTimer 
+	}
+}*/
+
+/*plusSlides = () =>{
+	slideIndex ++;
+	this.showSlides(slideIndex);
+}*/
+
+
+currentSlide = (n) =>{
+	this.showSlides(slideIndex = n);
+	//reset timer here
+}
+
+showSlides = () => {
 
 	console.log(slideIndex);
 	var i;
@@ -23,5 +43,4 @@ var showSlides = () => {
 	if (slideIndex > 2) {slideIndex = 1}
 }
 
-
-	setInterval(showSlides, 9000);
+setInterval(showSlides, 9000);
