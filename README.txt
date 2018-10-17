@@ -1,1 +1,1 @@
-This is a work-in-progress portfolio website, created using the Skeleton boilerplate.
+This is a work-in-progress portfolio website.
