@@ -2,51 +2,37 @@
 <html lang="en">
 <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>Ari Bennett</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Mobile Specific Metas–––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+  <!-- CSS ––––––––––––– -->
   <link rel="stylesheet" href="css/site.css">
   <!-- icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
 
-  <!-- JS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Icon ––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
 
 
 <body>
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div id="alert" align="center" style="color: red;"><h2>[Site in Progress!!!]</h2></div>
+
+<div align="center" class="body-content">
 
   <header>
 
     <div id="title">
-      <a href="index.html"><p id="title-name"> Ari Bennett </p></a>
+      <a id="title-name" href="index.html"><h1> Ari Bennett </h1></a>
       <!--<p id="tagline" align="center">digital artist, programmer, designer</p>-->
     </div>
-
     <div id="navbar">
       <a href="index.html">work</a>
       <a href="about.html">about</a>
@@ -60,134 +46,103 @@
   <!-- header end -->
 
 
-  <div id="grid" class="container">
+  
 
-  <hr id="line">
+  <hr align="center" id="line">
 
 
   <!-- <div class="row">
     <div id="tag-selection" align="right">
       <p id="interaction-tag">interaction</p> &nbsp; <p id="motion-tag">motion</p> &nbsp;  <p id="graphic-tag">image</p>
     </div>
-
-
-
   </div> -->
 
 
 
 
     <!--first row-->
-    <div class="row body-content"> 
+    <div class="grid masonry-grid"> 
       
+      <div class="grid-sizer"></div>
+
       <!--piece 1 -->
-      <div class="four columns">
-        <div id="item">
-          <a href="work/thecall.html"><img id="icon" src="images/icons/the_call1.gif"></a>
-          <div class="icon-banner" align="center"><a class="icon-title" href="work/the_call.html">The Call</a>
-          <!--create links for tags-->
-          <p id="icon-tags">motion - 3d animation</p> </div>
-        </div>
-      </div>
-
-      <!--piece 2 -->
-      <div class="four columns">
-        <div id="item">
-          <a href="work/planets.html"><img id="icon" src="images/icons/planets1.gif"></a>
-          <div class="icon-banner" align="center"><a class="icon-title" href="work/">Planets</a>
-          <!--create links for tags-->
-          <p id="icon-tags">interaction - p5.js</p> </div>
-        </div>
-      </div>
-
-      <!--piece 3 -->
-      <div class="four columns">
-        <div id="item">
+      <div class="grid-item">
           <a href="work/sensitivities.html"><img id="icon" src="images/icons/sensitivities1.jpg"></a>
           <div class="icon-banner" align="center"><a class="icon-title" href="work/sensitivities.html">Sensitivities</a>
           <!--create links for tags-->
           <p id="icon-tags">interaction - max &amp; arduino</p> </div>
         </div>
+      
+
+      <!--piece 2 -->
+      <div class="grid-item">
+          <a href="work/planets.html"><img id="icon" src="images/icons/planets1.gif"></a>
+          <div class="icon-banner" align="center"><a class="icon-title" href="work/">Planets</a>
+          <!--create links for tags-->
+          <p id="icon-tags">interaction - p5.js</p> </div>
       </div>
 
-    </div> <!--first row end-->
-    
-
-
-    <!--second row-->
-    <div class="row body-content"> 
+      <!--piece 3 -->
+=        <div class="grid-item">
+          <a href="work/thecall.html"><img id="icon" src="images/icons/the_call1.gif"></a>
+          <div class="icon-banner" align="center"><a class="icon-title" href="work/the_call.html">The Call</a>
+          <!--create links for tags-->
+          <p id="icon-tags">motion - 3d animation</p> </div>
+      </div>
       
-      <!--piece 1 -->
-      <div class="four columns">
-        <div id="item">
+      <!--piece 4 -->
+        <div class="grid-item">
           <a href="work/bbklyn.html"><img id="icon" src="images/icons/bbkyln1.png"></a>
           <div class="icon-banner" align="center"><a class="icon-title" href="work/bbklyn.html">bbklyn</a>
           <!--create links for tags-->
           <p id="icon-tags">visual - databending</p> </div>
         </div>
-      </div>
 
-      <!--piece 2 -->
-      <div class="four columns">
-        <div id="item">
+      <!--piece 5 -->
+        <div class="grid-item">
           <a href="work/typology.html"><img id="icon" src="images/icons/typology1.png"></a>
           <div class="icon-banner" align="center"><a class="icon-title" href="work/typology.html">Typology Study</a>
           <!--create links for tags-->
           <p id="icon-tags">visual - photography</p> </div>
         </div>
-      </div>
 
-      <!--piece 3 -->
-      <div class="four columns">
-        <div id="item">
+      <!--piece 6 -->
+        <div class="grid-item">
           <a href="work/cat-fish.html"><img id="icon" src="images/icons/catfish1.gif"></a>
           <div class="icon-banner" align="center"><a class="icon-title" href="work/cat-fish.html">Cat-fish</a>
           <!--create links for tags-->
           <p id="icon-tags">motion - Max</p> </div>
         </div>
-      </div>
-
-    </div> <!--second row end-->
 
 
 
-<!--third row-->
-    <div class="row body-content"> 
-      
-      <!--piece 1 -->
-      <div class="four columns">
-        <div id="item">
+      <!--piece 7 -->
+        <div class="grid-item">
           <a href="work/lying.html"><img id="icon" src="images/icons/lying1.gif"></a>
           <div class="icon-banner" align="center"><a class="icon-title" href="work/lying.html">Lying</a>
           <!--create links for tags-->
           <p id="icon-tags">motion - 3d animation</p> </div>
         </div>
-      </div>
 
-      <!--piece 2 -->
-      <div class="four columns">
-        <div id="item">
+      <!--piece 8 -->
+        <div class="grid-item">
           <a href="work/film1.html"><img id="icon" src="images/icons/film1.png"></a>
           <div class="icon-banner" align="center"><a class="icon-title" href="work/film1.html">The Flame's Truth</a>
           <!--create links for tags-->
           <p id="icon-tags">motion - film</p> </div>
         </div>
-      </div>
 
 
-      <!--piece 3 -->
-      <div class="four columns">
-        <div id="item">
+      <!--piece 9 -->
+        <div class="grid-item">
           <a href="work/panoptic.html"><img id="icon" src="images/icons/panoptic1.png"></a>
           <div class="icon-banner" align="center"><a class="icon-title" href="work/panoptic.html">Panoptic</a>
           <!--create links for tags-->
           <p id="icon-tags">interaction - Max</p> </div>
         </div>
-      </div>
 
-      
 
-    </div> <!--third row end-->
+    </div> <!--grid end-->
 
 
 
@@ -197,9 +152,25 @@
   
   
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="js/site.js"></script>
+<!-- Scripts–––––––––––––––––––––––––––––––– -->
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script src="../jquery/masonry.pkgd.min.js"></script>
 
+  <script type="text/javascript">
+    var grid = document.querySelector('.grid');
+
+    var msnry = new Masonry( grid, {
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      percentPosition: true
+    });
+
+    imagesLoaded( grid ).on( 'progress', function() {
+      // layout Masonry after each image loads
+      msnry.layout();
+    });
+  </script>
+  <script src="js/site.js"></script>
+<!-- End Page-->
 </body>
 </html>

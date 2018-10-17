@@ -1,7 +1,16 @@
-/*-----------------------home-----------------------------------------*/
+/*-----------------------home--------------------------*/
+
+.body-content {
+	position: relative;
+	width: 100%
+	max-width: 1000px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
 
 body{
-	font-family: 'IBM Plex Mono', monospace;
+	margin:0;
+	font-family: monospace;
 	color: #3f3f3f;
 }
 
@@ -10,30 +19,67 @@ body a{
 }
 
 header {
-	padding-top: 10px;
+	padding-top: 0px;
 	padding-left: 20px;
-	margin: 3% 3% 0% 3%;
+	margin-top: 0px;
 }
+
+
+* { box-sizing: border-box; }
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
+
+/*-----grid-----*/
+.masonry-grid {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.grid-sizer, .grid-item {
+	width: 33.333%
+}
+
+.grid-item { 
+	float: left;
+}
+
+.grid-item img {
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 5px;
+}
+
+.grid-item--width2{
+	width: 66.666%;
+	float: right;
+}
+
+.grid-item--width3{
+	width: 100%;
+	float: right;
+}
+
+
+
 
 /*---------header: title & tagline----------*/
 
-header a{
-	text-decoration:none;
+#title-name h1{
+	font-size: 50pt;
+	font-weight: bold;
+ 	margin-top: 0;
+ 	margin-bottom: 2rem;
+  	transition: all 0.15s ease
+  	color: black;
+  	padding: 0;
+}
+
+#title a {
 	color: black;
 }
-
-#title {
-	line-height: 60pt;
-	margin: 0px 0px 0px 0px;
-}
-
-#title a{
-	font-size: 50pt;
-	text-align: center;
-	font-weight: bold;
-	transition: all 0.15s ease;
-}
-
 
 /*---------navbar----------*/
 
@@ -53,7 +99,7 @@ header a{
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 	transition: all 0.15s ease;
-
+	color: black;
 }
 
 #navbar a:hover{
@@ -63,10 +109,17 @@ header a{
 }
 
 #line{
-	width: 100%;
+	width: 80%;
 	margin-bottom: 0px;
 	margin-top: 12px;
 	margin-bottom: 40px;
+}
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1;
 }
 
 
@@ -87,7 +140,6 @@ header a{
 	border-radius: 15px;
 	padding: 1px 8px 1px 8px;
 	transition: 0.15s ease;
-
 }
 
 #tag-selection p:hover{
@@ -99,20 +151,8 @@ header a{
 
 
 /*---------icons----------*/
-
-.body-content {
-	margin-top: 0px;
-	padding-top: 0px;
-}
-
-
-#icon {
-	max-width: 100%;
-	padding: 0px;
-	margin: 0px;
-}
-
 .icon-title {
+	display: none;
 	color: #3f3f3f;
 	font-size: 20px;
 	font-weight: bold;
@@ -122,14 +162,15 @@ header a{
 }
 
 #icon-tags {
+	display: none;
+	font-size: 10pt;
 	margin-top: 0px;
 	padding-top: 0px;
 	font-style: italic; 
+	margin-bottom: 0px;
+	padding-bottom: 10px;
 }
 
-.icon-banner {
-	
-}
 
 
 /*-----------------piece_page----------------------------------*/
@@ -241,16 +282,20 @@ a.darken p:hover {
 /*-------------------------------about me----------------------------*/
 
 
-#about-me {
-	/*font-family: 'Poppins', sans-serif; */
+#about-me p{
 	color: black;
-	padding-top: 20px;
 	font-size: 18px;
+	text-align: left;
+	padding-left: 30px;
+}
+
+#skills p {
+	font-size: 18px;
+	text-align: center;
 }
 
 #profile-pic {
 	width: 100%;
-
 }
 
 #resume {

@@ -2,42 +2,34 @@
 <html lang="en">
 <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>Ari Bennett</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Mobile Specific Metas–––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- CSS ––––––––––––– -->
+  <link rel="stylesheet" href="css/site.css">
+  <!-- icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
- <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/site.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Icon ––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
 
 
 <body>
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<div align="center" class="body-content">
 
   <header>
 
     <div id="title">
-      <a href="index.html"><p id="title-name"> Ari Bennett </p></a>
+      <a id="title-name" href="index.html"><h1> Ari Bennett </h1></a>
       <!--<p id="tagline" align="center">digital artist, programmer, designer</p>-->
     </div>
 
@@ -49,52 +41,53 @@
 
 
   </header>   
-
-
   <!-- header end -->
 
+  <hr id="line"> 
 
-  <div id="grid" class="container">
+  <div class="masonry-grid body-content">         
 
-      <hr id="line"> 
-
-
-    <div class="row">
-      
-
-        <div id="about-me" class="three columns"> <!--image -->
+        <!-- image -->
+        <div class="grid-item"> <!--image -->
           <img id="profile-pic" src="images/me.png">
         </div>
-
-        <div id="about-me" class="nine columns"> <!-- description -->
+          <!-- description -->
+        <div id="about-me" class="grid-item--width2">
               <p>
               &emsp; Ariana Bennett is an Integrated Digital Media student at NYU's Tandon School of Engineering. 
               <br>
-              &emsp; Working at the intersection of art and technology, she has experience and interest in various fields, such as web development, interaction design, animation, and graphic design. Designing and building across several mediums has given her 
+              <br>
+              &emsp; Working at the intersection of art and technology, she has experience and interest in various fields, such as web development, interaction design, and computational animation. Designing and building across several mediums has given her 
               <br>
               &emsp; She has particular interest in
               <br>
               <br>
              <!--  &emsp; With experience in many different ___, this portfolio has been organized into three categories: <b>"interaction"</b>, <b>"motion"</b>, and <b>"visuals"</b>. While the mediums and technical skills vary from project to project, there are fundamental skills in common. -->
-             <b>Coding Languages:</b> Javascript (Processing, P5.js, Node.js), HTML, CSS, Python, Max, Arduino
+             </p>
+             </div>
+
+             <div class="grid-item--width3" id="skills">
+             <p>
+             <b>Programming / Languages:</b> 
+             <br>Javascript (), HTML, CSS, Processing, p5.js, Max, Arduino, Python
              <br>
-             <b>Design Programs:</b> Adobe Illustrator, Adobe Photoshop, Adobe Premiere, Adobe InDesign
              <br>
-             <b>Skills:</b> Graphic Design, Front &amp; Back-end Web development, 
+             <b>Design Programs:</b>
+             <br>Adobe Illustrator, Adobe Photoshop, Adobe Premiere, Adobe InDesign
+             <br>
+             <br>
+             <b>Skills:</b>
+             <br>Interaction design, Web development, Creative Coding, Physical Computing/Electronics
 
-              <br>
-              <br>
+            <br>
+            <br>
 
-              Interaction - 
-              Motion -
-              Visuals -
+            Interaction - 
+            Motion -
+            Visuals
 
-              </p>
+            </p>
         </div>
-
-
-    </div> <!-- end row-->
-
 
 
   </div>
