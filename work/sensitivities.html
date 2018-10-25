@@ -28,7 +28,7 @@
 </head>
 
 
-<body>
+<body onload="showSlides()">
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
@@ -70,12 +70,66 @@
           This piece was created in Max, where input from a Kinect 2 is utilized to control multiple servos independently using an Arduino. The servos control the flowers' movement using a laser-cut scotch yoke mechanism.
           <br>
           <br>
-          Programmed in Max. Flowers fabricated with wood, paper, and wire. 2018.</p>
+          Programmed in Max. Flowers fabricated with wood, paper, and wire. 2018.
+          <br><br>
+          process:
+        </p>
         </div>
+
+
+        <div class="slideshow">
+          <div align="center" class="mySlides">
+            <img class="slide_image" src="../images/sensitivities/process1.jpg">
+          </div>
+
+          <div align="center" class="mySlides">
+            <img class="slide_image" src="../images/sensitivities/process2.jpg">
+          </div>
+
+          <div align="center" class="mySlides">
+            <img class="slide_image" src="../images/sensitivities/process3.jpg">
+          </div>
+
+          <div align="center" class="mySlides">
+            <img class="slide_image" src="../images/sensitivities/process4.jpg">
+          </div>
+
+          <div align="center" class="mySlides">
+            <img class="slide_image" src="../images/sensitivities/process5.jpg">
+          </div>
+
+          <div align="center" class="mySlides">
+            <img class="slide_image" src="../images/sensitivities/process6.jpg">
+          </div>
+
+          <div id="dots" align="center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+          </div>
+         <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
+        </div>
+
+
+        
+      <!-- <img src="../images/sensitivities/process1.jpg">
+      <img src="../images/sensitivities/process2.jpg">
+      <img src="../images/sensitivities/process3.jpg">
+      <img src="../images/sensitivities/process4.jpg">
+      <img src="../images/sensitivities/process5.jpg">
+      <img src="../images/sensitivities/process6.jpg">
+      <img src="../images/sensitivities/process7.jpg">
+      <img src="../images/sensitivities/process8.jpg"> -->
+
   </div>
 
   
-  
+  <!-- Scripts ––––––––––––––––––––––––– -->
+  <script src="../js/slideshow.js"></script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

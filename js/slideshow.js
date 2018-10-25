@@ -42,5 +42,3 @@ showSlides = () => {
 	slideIndex ++;
 	if (slideIndex > 2) {slideIndex = 1}
 }
-
-setInterval(showSlides, 9000);
