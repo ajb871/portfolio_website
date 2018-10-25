@@ -1,1 +1,0 @@
-This is the repository of my portfolio website, which is hosted at [aribennett.net](https://aribennett.net)
