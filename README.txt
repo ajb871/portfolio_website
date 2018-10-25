@@ -1,1 +1,1 @@
-This is a work-in-progress portfolio website.
+This is the repository of my portfolio website, which is hosted at [aribennett.net](https://aribennett.net)
