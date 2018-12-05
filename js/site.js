@@ -1,4 +1,5 @@
 //Color Flashing Script
+
 var title = document.getElementById('title-name');
 var h = 0;
 var s = "69%";
@@ -27,3 +28,14 @@ var flashColor = () =>	{
 }
 
 
+
+// Navigation Menu Class Editing
+
+var dropMenu = () =>{
+	var nav = document.getElementById('myNav');
+	if (nav.className === 'nav'){
+		nav.className += 'responsive'
+	} else {
+		nav.className = 'nav'
+	}
+}

@@ -12,6 +12,9 @@
 
   <!-- CSS ––––––––––––– -->
   <link rel="stylesheet" href="css/site.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+
+
   <!-- icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
@@ -19,44 +22,43 @@
   <!-- Icon ––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+
+
 </head>
 
 
 <body>
-<!-- <div id="alert" align="center" style="color: red;"><h2>[Site in Progress!!!]</h2></div> -->
 
+ <header>
+  <div class="clear"></div>
+  <nav id="myNav" class="nav">
+    <div class="body-content">
+    <div id="title">
+      <a id="title-name" href="index.html">Ari Bennett</a>
+    </div>
+    <ul>
+      <li><a href="index.html" class="active-page">projects</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="resume.html">resume</a></li>
+      <li><a href="javascript:void(0);" class="menu" onclick="dropMenu()">
+        <i class="fa fa-bars"></i>
+      </a></li>
+    </ul>
+  </div>
+  </nav>
+</header>
+
+
+<!-- header end -->
 <div align="center" class="body-content">
 
-  <header>
+  <div class="grid masonry-grid"> 
 
-    <div id="title">
-      <a id="title-name" href="index.html"><h1> Ari Bennett </h1></a>
-      <!--<p id="tagline" align="center">digital artist, programmer, designer</p>-->
-    </div>
-    <div id="navbar">
-      <a href="index.html">projects</a>
-      <a href="about.html">about</a>
-      <a href="resume.html">resume</a>
-    </div>
+    <div class="grid-sizer"></div>
 
-
-  </header>   
-
-
-  <!-- header end -->
-
-
-  <hr align="center" id="line">
-
-    <!--first row-->
-    <div class="grid masonry-grid"> 
-      
-      <div class="grid-sizer"></div>
-
-      <div class="grid-item">
-          <a href="https://twitter.com/tweetmuseum_bot"><img class="icon" src="images/icons/museumbot2.jpg">
-          <!-- testing rollover here -->
-          <div class="rollover">
+    <div class="grid-item">
+          <a href="work/twitterbot.html"><img class="icon" src="images/icons/museumbot2.jpg">          
+            <div class="rollover">
             <div class="text"><b>Museum of Tweets</b></div>
             <div class="text subhead">[twitter bot]</div>
           </div>
@@ -68,7 +70,7 @@
           <a href="work/sensitivities.html"><img class="icon" src="images/icons/sensitivities1.jpg">
           <div class="rollover">
             <div class="text"><b>Sensitivities</b></div>
-            <div class="text subhead">[interactive installation]</div>
+            <div class="text subhead">[kinect sculpture]</div>
           </div>
           </a>
         </div>
@@ -91,7 +93,7 @@
           </a>
         </div>
 
-=        <div class="grid-item">
+        <div class="grid-item">
           <a href="work/thecall.html"><img class="icon" src="images/icons/the_call1.gif">
           <div class="rollover">
             <div class="text"><b>The Call</b></div>
@@ -136,42 +138,38 @@
           </a>
         </div>
 
-        
 
-
-      
-        
-
-
-    </div> <!--grid end-->
+  </div> <!--grid end-->
 
 
 
 
-  </div>
+</div> <!-- body content end -->
 
-  
-  
+
+
 
 <!-- Scripts–––––––––––––––––––––––––––––––– -->
-  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-  <script src="jquery/masonry.pkgd.min.js"></script>
 
-  <script type="text/javascript">
-    var grid = document.querySelector('.grid');
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script src="jquery/masonry.pkgd.min.js"></script>
 
-    var msnry = new Masonry( grid, {
-      itemSelector: '.grid-item',
-      columnWidth: '.grid-sizer',
-      percentPosition: true
-    });
+<script type="text/javascript">
+  var grid = document.querySelector('.grid');
 
-    imagesLoaded( grid ).on( 'progress', function() {
+  var msnry = new Masonry( grid, {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true
+  });
+
+  imagesLoaded( grid ).on( 'progress', function() {
       // layout Masonry after each image loads
       msnry.layout();
     });
   </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/site.js"></script>
-<!-- End Page-->
+  <!-- End Page-->
 </body>
 </html>

@@ -4,77 +4,79 @@
 <head>
 
   <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Ari Bennett</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Ari Bennett</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
   <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="../css/site.css">
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="../css/site.css">
 
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300i,400,700" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
 
   <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="../images/favicon.png">
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="../images/favicon.png">
 
-</head>
+  </head>
 
 
-<body onload="showSlides()">
+  <body>
   <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <header>
-
-    <!--<div id="title">
-      <a href="index.html"><p> Ari Bennett </p></a>
-    </div> -->
-
-    <div style"margin" id="navbar">
-      <a href="../index.html">work</a>
-      <a href="../about.html">about</a>
-      <a href="../resume.html">resume</a>
-    </div>
-
-
-  </header>   
-
-
-  <!-- header end -->
-
-
-
-  <hr id="line"> 
-
-        
-
-  <div class="body-content masonry-grid" style="margin-bottom: 30px">
-
-  <div class="piece_titletags"><h3 id="piece_title" align="center">Sensitivities</h3><p class="piece_tags" align="center">Installation &amp; Physical Computing</p></div>
-<iframe src="https://player.vimeo.com/video/291962492?autoplay=1&loop=1&autopause=1" align="center" width="100%" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
- 
-        <div class="piece_body">
-          <p align="center">&emsp; Sensitivities is a Kinect sculpture created of reactive and perceptive flowers. Inspired by the mimosa pudica, a flower that can react to physical touch, this sculpture meditates on the space around it. The thin, delicate flowers absorb their surroundings, and will withdraw into themselves if threatened by an over stimulation of people or motion.
-          <br>
-          When left alone, they breath gently.
-          <br>
-          <br>
-          This piece was created in Max, where input from a Kinect 2 is utilized to control multiple servos independently using an Arduino. The servos control the flowers' movement using a laser-cut scotch yoke mechanism.
-          <br>
-          <br>
-          Programmed in Max. Flowers fabricated with wood, paper, and wire. 2018.
-          <br><br>
-          <a href="https://github.com/ajb871/II_Final_Project">[Github link]</a>
-        </p>
+    <header>
+      <div class="clear"></div>
+      <nav id="myNav" class="nav">
+        <div class="body-content">
+          <div id="title">
+            <a id="title-name" href="../index.html">Ari Bennett</a>
+          </div>
+          <ul>
+            <li><a href="../index.html">projects</a></li>
+            <li><a href="../about.html">about</a></li>
+            <li><a href="../resume.html">resume</a></li>
+            <li><a href="javascript:void(0);" class="menu" onclick="dropMenu()">
+              <i class="fa fa-bars"></i>
+            </a></li>
+          </ul>
         </div>
+      </nav>
+    </header>
+
+      <div class="body-content">
+        <div class="piece_titletags"><h3 id="piece_title" align="center">Sensitivities</h3><p class="piece_tags" align="center">Kinetic Sculpture</p></div>
+        <iframe src="https://player.vimeo.com/video/291962492?autoplay=1&loop=1&autopause=1" align="center" width="100%" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <div class="masonry-grid" style="margin-bottom: 10%"> 
+        <div class="piece_body" align="center">
+          <p>&emsp; Sensitivities is a Kinect sculpture created of reactive and perceptive flowers. Inspired by the mimosa pudica, a flower that can react to physical touch, this sculpture meditates on the space around it. The thin, delicate flowers absorb their surroundings, and will withdraw into themselves if threatened by an over stimulation of people or motion.
+            <br>
+            When left alone, they breath gently.
+        <!--     <br>
+            <br>
+            &emsp; This piece was created in Max, where input from a Kinect 2 is utilized to control multiple servos independently using an Arduino. The servos control the flowers' movement using a laser-cut scotch yoke mechanism. -->
+            <br>
+            <br>
+            Programmed in Max. Flowers fabricated with wood, paper, and wire. 2018.
+            <br><br>
+            <a style= "color: #603fe2;" href="https://github.com/ajb871/II_Final_Project">[Github link]</a>
+          </p>
+        </div>
+
+        <!-- <div align="center" class="process">
+          <h2>Process / Case Study:</h2>
+        <p></p>
+        <img class="process-img" src="../images/sensitivities/process11.jpg">
+        <img class="process-img" src="../images/sensitivities/process12.jpg">
+
+
+        </div> -->
 
 
         <!-- WIP Progress Slideshow -->
@@ -113,11 +115,12 @@
           </div>
         </div> -->
 
-  </div>
+      </div>
 
-  
-  <!-- Scripts ––––––––––––––––––––––––– -->
-  <script src="../js/slideshow.js"></script>
+    </div>
+      
+      <!-- Scripts ––––––––––––––––––––––––– -->
+      <script src="../js/slideshow.js"></script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
