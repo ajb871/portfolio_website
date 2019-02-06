@@ -266,26 +266,26 @@ nav .menu{
 	opacity: 1;
 }
 .text{
-	font-size: 24pt;
+	font-size: 22pt;
 	background-color: white;
 	padding-bottom: 15px;
 }
 .subhead {
-	font-size: 12pt;
+	font-size: 14pt;
 }
 
 @media only screen and (max-width: 1100px){
 	.text{
-		font-size:16pt;
+		font-size:18pt;
 	}
 	.subhead {
-		font-size:12pt;
+		font-size:14pt;
 	}
 }
 
 @media only screen and (max-width: 600px){
 	.text{
-		font-size:18pt;
+		font-size:20pt;
 	}
 	.subhead {
 		font-size:14pt;
@@ -343,8 +343,17 @@ iframe {
 
 /*--------process images----------*/
 .process img{
-	width: 30%;
+	width: 40%;
+	padding: 0px 10px;
 	margin-bottom: 30px;
+}
+.process p {
+	margin-top: 0px;
+}
+@media only screen and (max-width: 600px){
+	.process img {
+		width: 70%;
+	}
 }
 
 
@@ -441,14 +450,14 @@ iframe {
 
 #about-me p{
 	color: black;
-	font-size: 18px;
+	font-size: 20px;
 	text-align: left;
 	height: 200px;
 	margin: 50px 2% auto auto;
 }
 
 #skills p {
-	font-size: 18px;
+	font-size: 22px;
 	text-align: center;
 }
 
