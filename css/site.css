@@ -3,9 +3,13 @@
 .body-content {
 	position: relative;
 	width: 90%;
-	max-width: 1200px;
+	max-width: 1080px;
 	margin: 0 auto;
 	box-sizing: border-box;
+}
+
+.body-content p {
+	max-width: 900px;
 }
 
 body{
@@ -345,7 +349,7 @@ iframe {
 .process img{
 	width: 40%;
 	padding: 0px 10px;
-	margin-bottom: 30px;
+	margin-bottom: 5px;
 }
 .process p {
 	margin-top: 0px;
@@ -440,8 +444,12 @@ iframe {
 	color: #333333;
 }
 
-.piece_body {
+.piece_body, .process p{
 	font-size: 14pt;
+}
+
+.piece_body p{
+	margin-top: 50px;
 }
 
 
@@ -458,7 +466,7 @@ iframe {
 
 #skills p {
 	font-size: 22px;
-	text-align: center;
+	text-align: left;
 }
 
 #profile-pic {
