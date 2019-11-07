@@ -32,10 +32,16 @@ var flashColor = () =>	{
 // Navigation Menu Class Editing
 
 var dropMenu = () =>{
-	var nav = document.getElementById('myNav');
-	if (nav.className === 'nav'){
-		nav.className += 'responsive'
-	} else {
-		nav.className = 'nav'
+	var nav = document.getElementsByClassName('mobile');
+
+	for (var i = 0; i < nav.length; i++) {
+		if(nav[i].style.display === "block") {
+			nav[i].style.display = "none";
+		} else{
+			nav[i].style.display = "block";
+		}
 	}
+	
+
+	console.log("menu clicked");
 }

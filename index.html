@@ -13,6 +13,8 @@
   <!-- CSS ––––––––––––– -->
   <link rel="stylesheet" href="css/site.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900&display=swap" rel="stylesheet">
+
 
 
   <!-- icon library -->
@@ -31,19 +33,27 @@
 
  <header>
   <div class="clear"></div>
-  <nav id="myNav" class="nav">
+  <nav class="nav">
     <div class="body-content">
-    <div id="title">
-      <a id="title-name" href="index.html">Ari Bennett</a>
-    </div>
-    <ul>
-      <li><a href="index.html" class="active-page">projects</a></li>
-      <li><a href="about.html">about</a></li>
-      <li><a href="resume.html">resume</a></li>
-      <li><a href="javascript:void(0);" class="menu" onclick="dropMenu()">
-        <i class="fa fa-bars"></i>
-      </a></li>
-    </ul>
+
+      <div id="title">
+        <a id="title-name" href="index.html">Ari Bennett</a>
+      </div>
+
+      <ul id="desktopNav">
+          <li><a href="about.html">about me</a></li>
+          <li><a href="resume.html">resume</a></li> 
+      </ul>
+
+      <ul id="mobileNav">
+          <a href="javascript:void(0);" class="menu" onclick="dropMenu()">
+          <i class="fa fa-bars"></i>
+          </a>
+          <li class="mobile"><a href="about.html">about me</a></li>
+          <li class="mobile"><a href="resume.html">resume</a></li> 
+          
+      </ul>
+
   </div>
   </nav>
 </header>
@@ -51,89 +61,58 @@
 
 <!-- header end -->
 <div align="center" class="body-content">
-
   <div class="grid masonry-grid"> 
+
 
     <div class="grid-sizer"></div>
 
+
+    <!-- Installations -->
     <div class="grid-item">
-          <a href="work/twitterbot.html"><img class="icon" src="images/icons/museumbot2.jpg">          
-            <div class="rollover">
-            <div class="text"><b>Museum of Tweets</b></div>
-            <div class="text subhead">[twitter bot]</div>
+          <a href="installations.html"><img class="icon" src="images/icons/install.jpg">          
+          <div class="rollover">
+            <div class="text"><b>installations</b></div>
           </div>
           </a>
           <!-- end -->
       </div>
 
       <div class="grid-item">
-          <a href="work/sensitivities.html"><img class="icon" src="images/icons/sensitivities1.jpg">
+          <a href="illustrations.html"><img class="icon" src="images/icons/illust.jpg">
           <div class="rollover">
-            <div class="text"><b>Sensitivities</b></div>
-            <div class="text subhead">[kinectic sculpture]</div>
+            <div class="text"><b>illustrations</b></div>
           </div>
           </a>
         </div>
       
       <div class="grid-item">
-          <a href="work/panoptic.html"><img class="icon" src="images/icons/panoptic1.jpg">
+          <a href="cc.html"><img class="icon" src="images/icons/cc.gif">
           <div class="rollover">
-            <div class="text"><b>Panoptic</b></div>
-            <div class="text subhead">[interactive installation]</div>
+            <div class="text"><b>creative coding</b></div>
           </div>
           </a>
         </div>
-      
+
        <div class="grid-item">
-          <a href="work/cat-fish.html"><img class="icon" src="images/icons/catfish1.gif">
+          <a href="animation.html"><img class="icon" src="images/icons/catfish1.gif">
           <div class="rollover">
-            <div class="text"><b>Cat->Fish</b></div>
-            <div class="text subhead">[video art]</div>
+            <div class="text"><b>animation + video</b></div>
           </div>
           </a>
         </div>
 
         <div class="grid-item">
-          <a href="work/thecall.html"><img class="icon" src="images/icons/the_call1.gif">
+          <a href="graphics.html"><img class="icon" src="images/icons/graphic.jpg">
           <div class="rollover">
-            <div class="text"><b>The Call</b></div>
-            <div class="text subhead">[3D animation]</div>
+            <div class="text"><b>graphic design</b></div>
           </div>
           </a>
         </div>
 
         <div class="grid-item">
-          <a href="work/typology.html"><img class="icon" src="images/icons/typology1.jpg">
+          <a href="photo.html"><img class="icon" src="images/icons/photo.jpg">
           <div class="rollover">
-            <div class="text"><b>Typology</b></div>
-            <div class="text subhead">[multimedia study]</div>
-          </div>
-          </a>
-        </div>
-
-         <div class="grid-item">
-          <a href="work/planets.html"><img class="icon" src="images/icons/planets1.gif">
-          <div class="rollover">
-            <div class="text"><b>Planets</b></div>
-            <div class="text subhead">[interactive experience]</div>
-          </div>
-          </a>
-        </div>
-
-         <div class="grid-item">
-          <a href="work/bbkyln.html"><img class="icon" src="images/icons/bbkyln1.jpg">
-          <div class="rollover">
-            <div class="text"><b>BBklyn</b></div>
-            <div class="text subhead">[photography &amp; databending]</div>
-          </div>
-          </a>
-        </div>
-
-        <div class="grid-item">
-          <a href="work/film.html"><img class="icon" src="images/icons/film1.jpg">
-          <div class="rollover">
-            <div class="text"><b>The Flame's Truth</b></div>
-            <div class="text subhead">[film]</div>
+            <div class="text"><b>photo + image</b></div>
           </div>
           </a>
         </div>

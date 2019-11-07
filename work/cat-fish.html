@@ -1,55 +1,62 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
-  <!-- Basic Page Needs
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8">
-    <title>Ari Bennett</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <title>Ari Bennett</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  <!-- Mobile Specific Metas
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Mobile Specific Metas–––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- CSS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-    <link rel="stylesheet" href="../css/site.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-
-  <!-- Favicon
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="../images/favicon.png">
-
-  </head>
+  <!-- CSS ––––––––––––– -->
+  <link rel="stylesheet" href="../css/site.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900&display=swap" rel="stylesheet">
 
 
-  <body>
-  <!-- Primary Page Layout
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <header>
-      <div class="clear"></div>
-      <nav id="myNav" class="nav">
-        <div class="body-content">
-          <div id="title">
-            <a id="title-name" href="../index.html">Ari Bennett</a>
-          </div>
-          <ul>
-            <li><a href="../index.html">projects</a></li>
-            <li><a href="../about.html">about</a></li>
-            <li><a href="../resume.html">resume</a></li>
-            <li><a href="javascript:void(0);" class="menu" onclick="dropMenu()">
-              <i class="fa fa-bars"></i>
-            </a></li>
-          </ul>
-        </div>
-      </nav>
-    </header> 
+  <!-- icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <!-- Icon ––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+
+</head>
+
+
+<body>
+
+ <header>
+  <div class="clear"></div>
+  <nav class="nav">
+    <div class="body-content">
+
+      <div id="title">
+        <a id="title-name" href="../index.html">Ari Bennett</a>
+      </div>
+
+      <ul id="desktopNav">
+          <li><a href="../about.html">about me</a></li>
+          <li><a href="../resume.html">resume</a></li> 
+      </ul>
+
+      <ul id="mobileNav">
+          <a href="javascript:void(0);" class="menu" onclick="dropMenu()">
+          <i class="fa fa-bars"></i>
+          </a>
+          <li class="mobile"><a href="about.html">about me</a></li>
+          <li class="mobile"><a href="resume.html">resume</a></li> 
+          
+      </ul>
+
+  </div>
+  </nav>
+ </header>
 
 
     <iframe src="https://player.vimeo.com/video/285589189?autoplay=1&loop=1&autopause=1" align="center" width="100%" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -59,8 +66,8 @@
   <div class="piece_titletags"><h3 id="piece_title" align="center">Cat-fish</h3><p class="piece_tags" align="center">motion, Max Jitter</p></div>
 
   <div class="body-content masonry-grid" style="margin-bottom: 30px">
-    <div class="piece_body">
-      <p align="center">&emsp; Cat-fish is the visual combination of like and unlike things, and a image of relationships. 
+    <div class="piece_body" align="center">
+      <p>&emsp; Cat-fish is the visual combination of like and unlike things, and a image of relationships. 
 
         <br>
         <br>
@@ -75,7 +82,9 @@
     
   </div>
 
-  
+  <!-- Scripts–––––––––––––––––––––––––––––––– -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/site.js"></script>
   
 
 <!-- End Document

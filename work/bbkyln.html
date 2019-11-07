@@ -1,65 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
-  <!-- Basic Page Needs
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8">
-    <title>Ari Bennett</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <title>Ari Bennett</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  <!-- Mobile Specific Metas
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Mobile Specific Metas–––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- CSS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="../css/site.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-
-  <!-- JS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="../js/slideshow.js"></script>
-
-  <!-- Favicon
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="../images/favicon.png">
-
-  </head>
+  <!-- CSS ––––––––––––– -->
+  <link rel="stylesheet" href="../css/site.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900&display=swap" rel="stylesheet">
 
 
-  <body onload="showSlides()">
-  <!-- Primary Page Layout
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <header>
-      <div class="clear"></div>
-      <nav id="myNav" class="nav">
-        <div class="body-content">
-          <div id="title">
-            <a id="title-name" href="../index.html">Ari Bennett</a>
-          </div>
-          <ul>
-            <li><a href="../index.html">projects</a></li>
-            <li><a href="../about.html">about</a></li>
-            <li><a href="../resume.html">resume</a></li>
-            <li><a href="javascript:void(0);" class="menu" onclick="dropMenu()">
-              <i class="fa fa-bars"></i>
-            </a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+  <!-- icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <!-- Icon ––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+
+</head>
+
+
+<body>
+
+ <header>
+  <div class="clear"></div>
+  <nav class="nav">
+    <div class="body-content">
+
+      <div id="title">
+        <a id="title-name" href="../index.html">Ari Bennett</a>
+      </div>
+
+      <ul id="desktopNav">
+          <li><a href="../about.html">about me</a></li>
+          <li><a href="../resume.html">resume</a></li> 
+      </ul>
+
+      <ul id="mobileNav">
+          <a href="javascript:void(0);" class="menu" onclick="dropMenu()">
+          <i class="fa fa-bars"></i>
+          </a>
+          <li class="mobile"><a href="about.html">about me</a></li>
+          <li class="mobile"><a href="resume.html">resume</a></li> 
+          
+      </ul>
+
+  </div>
+  </nav>
+ </header>
 
 
     <div class="piece_titletags"><h3 id="piece_title" align="center">Bbkyln</h3><p class="piece_tags" align="center">photo &amp; data manipulation</p></div>
 
     <div class="body-content masonry-grid" style="margin-bottom: 30px">
-      <div class="piece_body">
-        <p align="center">&emsp; A short collection of photography looking around Brooklyn.
+      <div class="piece_body" align="center">
+        <p>&emsp; A short collection of photography looking at or around Brooklyn.
           <br><br>
           &emsp; This piece was created by manipulating raw data of photos in Audacity.
           <br><br>
@@ -80,12 +84,11 @@
       <img  class="slide_image" src="../images/bbkyln/bbkyln5.jpg">
 
 
-         <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
-        </div>
+      </div>
 
 
-
+  <!-- Scripts -->
+  <script src="../js/site.js"></script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Ari Bennett</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas–––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS ––––––––––––– -->
+  <link rel="stylesheet" href="../css/site.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900&display=swap" rel="stylesheet">
+
+
+
+  <!-- icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <!-- Icon ––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+
+</head>
+
+
+<body>
+
+ <header>
+  <div class="clear"></div>
+  <nav class="nav">
+    <div class="body-content">
+
+      <div id="title">
+        <a id="title-name" href="index.html">Ari Bennett</a>
+      </div>
+
+      <ul id="desktopNav">
+          <li><a href="about.html">about me</a></li>
+          <li><a href="resume.html">resume</a></li> 
+      </ul>
+
+      <ul id="mobileNav">
+          <a href="javascript:void(0);" class="menu" onclick="dropMenu()">
+          <i class="fa fa-bars"></i>
+          </a>
+          <li class="mobile"><a href="about.html">about me</a></li>
+          <li class="mobile"><a href="resume.html">resume</a></li> 
+          
+      </ul>
+
+  </div>
+  </nav>
+ </header>
+
+
+<!-- header end -->
+<div align="center" class="body-content">
+  <div class="grid masonry-grid"> 
+
+
+    <div class="grid-sizer"></div>
+
+    <div class="grid-item">
+          <img class="icon" src="images/design/icons/sit.jpg">
+          <!-- end -->
+    </div>
+
+     <div class="grid-item">
+          <img class="icon" src="images/design/icons/scene.jpg">
+          <!-- end -->
+    </div>
+
+    <div class="grid-item">
+          <img class="icon" src="images/design/icons/sabrett.jpg">
+          <!-- end -->
+    </div>
+
+
+    <div class="grid-item">
+          <img class="icon" src="images/design/icons/yellowday2.jpg">
+          <!-- end -->
+    </div>
+
+    <div class="grid-item">
+          <img class="icon" src="images/design/icons/gorog.jpg">
+          <!-- end -->
+    </div>
+    
+    <div class="grid-item">
+          <img class="icon" src="images/design/icons/piano.jpg">
+          <!-- end -->
+    </div>
+    
+    <div class="grid-item">
+          <img class="icon" src="images/design/icons/punkrock.jpg">
+          <!-- end -->
+    </div>
+
+    
+
+    <div class="grid-item">
+          <img class="icon" src="images/design/icons/pink.jpg">
+          <!-- end -->
+    </div>
+
+    <div class="grid-item">
+          <img class="icon" src="images/design/icons/artist.jpg">
+          <!-- end -->
+    </div>
+
+    <div class="grid-item">
+          <img class="icon" src="images/design/icons/grilles1.jpg">
+          <!-- end -->
+    </div>
+
+  </div> <!--grid end-->
+
+
+
+
+</div> <!-- body content end -->
+
+
+
+
+<!-- Scripts–––––––––––––––––––––––––––––––– -->
+
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script src="jquery/masonry.pkgd.min.js"></script>
+
+<script type="text/javascript">
+  var grid = document.querySelector('.grid');
+
+  var msnry = new Masonry( grid, {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true
+  });
+
+  imagesLoaded( grid ).on( 'progress', function() {
+      // layout Masonry after each image loads
+      msnry.layout();
+    });
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/site.js"></script>
+  <!-- End Page-->
+</body>
+</html>

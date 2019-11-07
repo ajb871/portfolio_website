@@ -1,14 +1,27 @@
-<header id="header">
+<header>
+  <div class="clear"></div>
+  <nav class="nav">
+    <div class="body-content">
 
-	<div id="title">
-		<a id="title-name" href="index.html"><h1> Ari Bennett </h1></a>
-	</div>
-	<nav id="navbar">
-		<ul>
-			<li><a href="index.html">projects</a></li>
-			<li><a href="about.html">about</a></li>
-			<li><a href="resume.html">resume</a></li>
-		</ul>
-	</nav>
+      <div id="title">
+        <a id="title-name" href="index.html">Ari Bennett</a>
+      </div>
+
+      <ul id="desktopNav">
+          <li><a href="about.html">about me</a></li>
+          <li><a href="resume.html">resume</a></li> 
+      </ul>
+
+      <ul id="mobileNav">
+          <a href="javascript:void(0);" class="menu" onclick="dropMenu()">
+          <i class="fa fa-bars"></i>
+          </a>
+          <li class="mobile"><a href="about.html">about me</a></li>
+          <li class="mobile"><a href="resume.html">resume</a></li> 
+          
+      </ul>
+
+  </div>
+  </nav>
 
 </header>

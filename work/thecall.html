@@ -1,58 +1,65 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
-  <!-- Basic Page Needs
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8">
-    <title>Ari Bennett</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <title>Ari Bennett</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  <!-- Mobile Specific Metas
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Mobile Specific Metas–––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- CSS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- CSS ––––––––––––– -->
+  <link rel="stylesheet" href="../css/site.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../css/site.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-  <!-- JS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="../js/slideshow.js"></script>
-
-  <!-- Favicon
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="../images/favicon.png">
-
-  </head>
+  <!-- Script -->
+  <script src="../js/slideshow.js"></script>
 
 
-  <body onload="showSlides()">
-  <!-- Primary Page Layout
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <header>
-      <div class="clear"></div>
-      <nav id="myNav" class="nav">
-        <div class="body-content">
-          <div id="title">
-            <a id="title-name" href="../index.html">Ari Bennett</a>
-          </div>
-          <ul>
-            <li><a href="../index.html">projects</a></li>
-            <li><a href="../about.html">about</a></li>
-            <li><a href="../resume.html">resume</a></li>
-            <li><a href="javascript:void(0);" class="menu" onclick="dropMenu()">
-              <i class="fa fa-bars"></i>
-            </a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+  <!-- icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <!-- Icon ––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+
+</head>
+
+
+<body onload="showSlides()">
+
+ <header>
+  <div class="clear"></div>
+  <nav class="nav">
+    <div class="body-content">
+
+      <div id="title">
+        <a id="title-name" href="../index.html">Ari Bennett</a>
+      </div>
+
+      <ul id="desktopNav">
+          <li><a href="../about.html">about me</a></li>
+          <li><a href="../resume.html">resume</a></li> 
+      </ul>
+
+      <ul id="mobileNav">
+          <a href="javascript:void(0);" class="menu" onclick="dropMenu()">
+          <i class="fa fa-bars"></i>
+          </a>
+          <li class="mobile"><a href="about.html">about me</a></li>
+          <li class="mobile"><a href="resume.html">resume</a></li> 
+          
+      </ul>
+
+  </div>
+  </nav>
+ </header>
 
     <div class="slideshow">
 
@@ -72,17 +79,20 @@
          <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
 
-        </div>
+    </div>
 
         
 
-      </div>
+      <!-- </div> -->
+
+      
 
       <div class="piece_titletags"><h3 id="piece_title" align="center">The Call</h3><p class="piece_tags" align="center">3D animation</p></div>
-
-      <div class="body-content masonry-grid" style="margin-bottom: 30px">    
-        <div class="piece_body">
-          <p align="center">&emsp; "L'appel du vide" (The call of the void) is best described as the urge to do the wrong thing in a given situation, simply because it is possible for wrong to be done. Sudden thoughts about leaping off a building, defacing art in a museum, driving your car off a bridge, not because one <i>wants</i> these things to happen, but because one suddenly realizes how <i>easy</i> it could be for these things to happen.
+      
+      <div class="body-content">
+      <div class="masonry-grid" style="margin-bottom: 30px">    
+        <div class="piece_body" align="center">
+          <p>&emsp; "L'appel du vide" (The call of the void) is best described as the urge to do the wrong thing in a given situation, simply because it is possible for wrong to be done. Sudden thoughts about leaping off a building, defacing art in a museum, driving your car off a bridge, not because one <i>wants</i> these things to happen, but because one suddenly realizes how <i>easy</i> it could be for these things to happen.
 
             <br>
             <br>
@@ -96,11 +106,15 @@
         </div>
         
       </div>
-
-      <!-- Scripts ––––––––––––––––––––––––– -->
-      <script type="text/javascript">
+    </div>
+    <!-- Scripts ––––––––––––––––––––––––– -->
+    
+    <script type="text/javascript">
         setInterval(showSlides, 9000);
       </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/site.js"></script>
+  
       
 
 <!-- End Document
