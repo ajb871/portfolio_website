@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Ari Bennett</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas–––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS ––––––––––––– -->
+  <link rel="stylesheet" href="../css/site.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900&display=swap" rel="stylesheet">
+
+
+
+  <!-- icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <!-- Icon ––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+
+</head>
+
+
+<body>
+
+ <header>
+  <div class="clear"></div>
+  <nav class="nav">
+    <div class="body-content">
+
+      <div id="title">
+        <a id="title-name" href="../index.html">Ari Bennett</a>
+      </div>
+
+      <ul id="desktopNav">
+          <li><a href="../about.html">about me</a></li>
+          <li><a href="../resume.html">resume</a></li> 
+      </ul>
+
+      <ul id="mobileNav">
+          <a href="javascript:void(0);" class="menu" onclick="dropMenu()">
+          <i class="fa fa-bars"></i>
+          </a>
+          <li class="mobile"><a href="about.html">about me</a></li>
+          <li class="mobile"><a href="resume.html">resume</a></li> 
+          
+      </ul>
+
+  </div>
+  </nav>
+ </header>
+
+        <div class="piece_titletags"><h3 id="piece_title" align="center">Dress Machine </h3><p class="piece_tags" align="center">Interactive Installation</p></div>
+
+        <div class="body-content">
+        <div class="masonry-grid" style="margin-bottom: 10%"> 
+        <div class="piece_body" align="center">
+                  <img align="center" src="../images/dm/setup.jpg">
+
+          <p>&emsp; <i>Dress Machine</i> is a piece about movement. Specifically, the invisible movements that sit behind common possesions and items.
+          While a finished piece of clothing hangs out-of-reach nearby, you sit in the place of a factory worker, going through the motions of apparel production.
+          <br><br>
+          By "working" a piece of fabric through a sewing machine, one is greeted with the soundscape of a fabric factory, loud and grating.
+          Visitors are encouraged to repeat the motion "over and over", but without end or any specific reward.
+            <br>
+            <br>
+            Programmed with Arduino. 2019.
+            <br><br>
+            <a style= "color: #603fe2;" href="https://github.com/ajb871/dressmachine">[Github link]</a>
+            <br>
+          </p>
+        </div>
+
+        <div align="center" class="process">
+          <h2>Process</h2>
+          <img src="../images/dm/fab1.jpg">          
+          <img src="../images/dm/fab2.jpg">
+
+
+          <h3>Switch Prototyping</h3>
+          <p style="font-size: 10pt;">Switch prototypes</p>
+          <p>Several iterations of switches were tested to discover the best way to detect the push/pull movement of working fabric in a sewing machine. The main elements it needed to detect were <i>precision and consistence</i>. Studying videos of both factory workers and amatuers using sewing machine helped me to understand their motions.
+          <br><br>
+          In the case of factory workers, the movement is not only precise and consistent, but incredibly repetitive. Workers will make the same small movements hundreds of times and hour, over and over, with consistent results.
+          </p>
+          <img class="process-img" src="../images/dm/switch1.jpg">
+          <img class="process-img" src="../images/dm/switch2.jpg">
+          <p style="font-size: 10pt">Early switch prototype</p>
+          <p>Given I was working fabric, it made sense to use conductive thread as a switch. The thread sewn across a piece of fabric could close a switch (and be recorded by a MCU). This switch was low-cost and easily fabricated, needing only a heavy fabric and any conductive thread. </p>
+
+          <p>The back of the fabric has bridges to close the circuit - while the front shows a line for the user to follow.</p>
+          
+          <iframe src="https://player.vimeo.com/video/383182550?loop=1&autopause=1" align="center" width="70%" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <img src="../images/dm/setup2.jpg">          
+          <img src="../images/dm/user1.jpg">
+          <img src="../images/dm/user2.jpg">
+          <img src="../images/dm/user3.jpg">
+                    <p style="margin-top:0; font-size: 10pt;">Final installation</p>
+
+
+
+        </div>
+      </div>
+
+    </div>
+     
+    <!-- Scripts–––––––––––––––––––––––––––––––– -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/site.js"></script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

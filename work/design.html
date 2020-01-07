@@ -22,6 +22,7 @@
   <!-- Icon ––––––– -->
   <link rel="icon" type="image/png" href="../images/favicon.png">
 
+    <script type="text/javascript" src="js/jquery.lazy.min.js"></script>
 
 
 </head>
@@ -57,83 +58,83 @@
 
     <div class="grid-sizer"></div>
 
-    <div class="grid-item">
+    <div class="lazy grid-item">
           <img class="icon" src="../images/design/gorog.png">
           <!-- end -->
     </div>
 
-    <div class="grid-item">
+    <div class="lazy grid-item">
           <img class="icon" src="../images/design/skm1.png">
           <!-- end -->
     </div>
 
-       <div class="grid-item">
+       <div class="lazy grid-item">
           <img class="icon" src="../images/design/sit.png">
           <!-- end -->
     </div>
 
-    <div class="grid-item">
+    <div class="lazy grid-item">
           <img class="icon" src="../images/design/stickers-01.png">
           <!-- end -->
     </div>
 
-    <div class="grid-item">
+    <div class="lazy grid-item">
           <img class="icon" src="../images/design/yellowday2.png">
           <!-- end -->
     </div>
 
-    <div class="grid-item">
+    <div class="lazy grid-item">
           <img class="icon" src="../images/design/punkrock.png">
           <!-- end -->
     </div>
 
-    <div class="grid-item">
+    <div class="lazy grid-item">
           <img class="icon" src="../images/design/sp.jpg">
           <!-- end -->
     </div>
 
-    <div class="grid-item">
+    <div class="lazy grid-item">
           <img class="icon" src="../images/design/drowsy.png">
           <!-- end -->
     </div>
 
-    <div class="grid-item">
+    <div class="lazy grid-item">
           <img class="icon" src="../images/design/scenedraft1.png">
           <!-- end -->
     </div>
 
-    <div class="grid-item">
+    <div class="lazy grid-item">
           <img class="icon" src="../images/design/sabrett.png">
           <!-- end -->
     </div>
 
-    <div class="grid-item">
+    <div class="lazy grid-item">
           <img class="icon" src="../images/design/skm2.png">
           <!-- end -->
     </div>
 
-    <div class="grid-item">
+    <div class="lazy grid-item">
           <img class="icon" src="../images/design/ls_quote.png">
           <!-- end -->
     </div>
 
 
-    <div class="grid-item">
+    <div class="lazy grid-item">
           <img class="icon" src="../images/design/artist.png">
           <!-- end -->
     </div>
 
-    <div class="grid-item">
+    <div class="lazy grid-item">
           <img class="icon" src="../images/design/grilles1.png">
           <!-- end -->
     </div>
   
-    <div class="grid-item">
+    <div class="lazy grid-item">
           <img class="icon" src="../images/design/tempest.png">
           <!-- end -->
     </div>
 
-    <div class="grid-item">
+    <div class="lazy grid-item">
           <img class="icon" src="../images/design/audition.png">
           <!-- end -->
     </div>
@@ -168,6 +169,10 @@
   imagesLoaded( grid ).on( 'progress', function() {
       // layout Masonry after each image loads
       msnry.layout();
+    });
+
+  $(function() {
+        $('.lazy').Lazy();
     });
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
