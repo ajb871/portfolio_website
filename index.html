@@ -59,40 +59,98 @@
 </header>
 
 
+<div id="loader" class="center"></div>
+
 <!-- header end -->
-<div align="center" class="body-content">
+<div align="center" class="main body-content">
   <div class="grid masonry-grid"> 
 
 
     <div class="grid-sizer"></div>
 
+    <h3 class="grid-item" style="font-weight: 200">selected projects</h3>
 
-    <!-- Installations -->
-      <div class="grid-item">
-          <a href="design.html"><img class="icon" src="images/icons/pb.jpg">          
+    <!-- <h2 class="grid-item text">selected works</h2> -->
+     <div class="grid-item">
+          <a href="work/sos.html"><img class="icon" src="images/icons/sos-01.png">          
           <div class="rollover">
-            <div class="text"><b>design projects</b></div>
+            <div class="text"><b>Site of Spirituality</b></div>
+            <div class="text subhead">architectural study + design</div>
+          </div>
+          </a>
+          <!-- end -->
+      </div>
+      
+         <div class="grid-item">
+          <a href="work/plantbots.html"><img class="icon" src="images/icons/pb.jpg">
+          <div class="rollover">
+            <div class="text"><b>Plantbots</b></div>
+            <div class="text subhead">3D design + fabrication</div>
+          </div>
+          </a>
+      </div>
+    <!-- Installations -->
+
+  <div class="grid-item">
+          <a href="work/dm.html"><img class="icon" src="images/icons/dm.jpg">          
+          <div class="rollover">
+            <div class="text"><b>Dress Machine</b></div>
+            <div class="text subhead">an interactive installation</div>
           </div>
           </a>
           <!-- end -->
       </div>
 
+         <div class="grid-item">
+          <a href="work/footprints.html"><img class="icon" src="images/icons/fp.png">
+          <div class="rollover">
+            <div class="text"><b>Footprints</b></div>
+            <div class="text subhead">installation + fabrication</div>
+          </div>
+          </a>
+      </div>
+
+      
+      <div class="grid-item">
+          <a href="work/calmcorner.html"><img class="icon" src="images/icons/calmcorner.png">
+          <div class="rollover">
+            <div class="text"><b>Calm Corner</b></div>
+            <div class="text subhead">space + identity design</div>
+          </div>
+          </a>
+      </div>
+
+    <!-- <h2 class="grid-item text">Personal</h2> -->
+    
 
     <div class="grid-item">
-          <a href="installations.html"><img class="icon" src="images/icons/install.jpg">          
+          <a href="work/sensitivities.html"><img class="icon" src="images/icons/sensitivities1.jpg">          
           <div class="rollover">
-            <div class="text"><b>installations</b></div>
+            <div class="text"><b>Sensitivities</b></div>
+            <div class="text subhead">a kinetic sculpture</div>
           </div>
           </a>
           <!-- end -->
       </div>
-     <div class="grid-item">
-          <a href="cc.html"><img class="icon" src="images/icons/cc.gif">
+      
+      <div class="grid-item">
+          <a href="work/panoptic.html"><img class="icon" src="images/icons/panoptic1.jpg">
           <div class="rollover">
-            <div class="text"><b>creative coding</b></div>
+            <div class="text"><b>Panoptic</b></div>
+            <div class="text subhead">an interactive installation</div>
           </div>
           </a>
-        </div>
+      </div>
+
+      <div class="grid-item">
+        <a href="work/twitterbot.html"><img class="icon" src="images/icons/museumbot1.jpg">
+          <div class="rollover">
+            <div class="text"><b>museum of tweet</b></div>
+            <div class="text subhead">twitter bot</div>
+          </div>
+        </a>
+          <!-- end -->
+    </div>
 
       <div class="grid-item">
           <a href="illustrations.html"><img class="icon" src="images/icons/illust.jpg">
@@ -123,12 +181,21 @@
 
   </div> <!--grid end-->
 
+    <div class="grid masonry-grid"> 
 
 
+    <div class="grid-sizer"></div>
+
+
+    </div>
 
 </div> <!-- body content end -->
 
 
+<script type="text/javascript">
+ document.querySelector( 
+                  "body").style.visibility = "hidden"; 
+</script>
 
 
 <!-- Scripts–––––––––––––––––––––––––––––––– -->
@@ -149,6 +216,21 @@
       // layout Masonry after each image loads
       msnry.layout();
     });
+
+  document.onreadystatechange = function() { 
+            if (document.readyState !== "complete") { 
+                document.querySelector( 
+                  "body").style.visibility = "hidden"; 
+                document.querySelector( 
+                  "#loader").style.visibility = "visible"; 
+            } else { 
+                document.querySelector( 
+                  "#loader").style.display = "none"; 
+                document.querySelector( 
+                  "body").style.visibility = "visible"; 
+            } 
+  };
+
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/site.js"></script>

@@ -25,7 +25,6 @@ body{
 body a{
 	text-decoration: none;
 	color: black;
-	cursor: pointer;
 }
 
 body a:hover{
@@ -97,7 +96,7 @@ html { overflow-y: scroll; }
 
 #title-name h1{
 	font-size: 20pt;
-	font-weight: 900;
+	/*font-weight: 900;*/
   	transition: all 0.15s ease
   	color: black;
 }
@@ -159,21 +158,10 @@ nav ul li{
 	line-height: 60px;
 }
 
+
 #mobileNav{display: none;}
 .mobile{
 	background-color: white;
-}
-
-/* -----responsive sizing - menu------ */
-.active-page {
-	color: #603fe2;
-}
-
-
-@media screen and (max-width: 600px) {
-	#desktopNav{display: none;}
-	#mobileNav{display: block;}
-	.mobile{display: none;}
 }
 
 
@@ -185,9 +173,9 @@ nav ul li{
 	backface-visibility: hidden;
 }
 .rollover {
-	/*background-color: white;*/
+	background-color: rgb(255,255,255,0.8);;
 	transition: .3s ease;
-	opacity: 0;
+	opacity: 1;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -202,15 +190,17 @@ nav ul li{
 	opacity: 0.1;
 }
 .grid-item:hover .rollover{
-	opacity: 1;
+	opacity: 0.2;
 }
 .text{
+	/*color: white;*/
 	font-size: 22pt;
 	/*background-color: white;*/
 	padding-bottom: 15px;
 }
 .subhead {
 	font-size: 14pt;
+	display: none;
 }
 
 @media only screen and (max-width: 1100px){
@@ -222,12 +212,32 @@ nav ul li{
 	}
 }
 
+
 @media only screen and (max-width: 600px){
 	.text{
-		font-size:24pt;
+		font-size:18pt;
 	}
 	.subhead {
 		font-size:14pt;
+	}
+}
+
+/* -----responsive sizing - menu------ */
+.active-page {
+	color: #603fe2;
+}
+
+
+@media screen and (max-width: 600px) {
+	#desktopNav{display: none;}
+	#mobileNav{display: block;}
+	.mobile{display: none;}
+	.rollover{
+		background-color: rgb(255,255,255,0.8);
+		opacity: 1;
+	}
+	.icon{
+	opacity: 1;
 	}
 }
 
@@ -418,5 +428,29 @@ iframe {
 	#resume{width: 80%;}
 }
 
-/*-------------------------------resume----------------------------*/
+/*-------------------------------spinner----------------------------*/
 
+#loader { 
+			
+            border: 5px solid #f3f3f3; 
+            border-radius: 50%; 
+            border-top: 5px solid #444444; 
+            width: 50px; 
+            height: 50px; 
+            animation: spin 1s linear infinite; 
+        } 
+          
+        @keyframes spin { 
+            100% { 
+                transform: rotate(360deg); 
+            } 
+        } 
+          
+        .center { 
+            position: absolute; 
+            top: 0; 
+            bottom: 0; 
+            left: 0; 
+            right: 0; 
+            margin: auto; 
+        } 
